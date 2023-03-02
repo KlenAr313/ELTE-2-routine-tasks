@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rational_skeleton", "Rational_skeleton\Rational_skeleton.csproj", "{935A8564-3F80-4BF9-8AD1-72B34D947906}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{935A8564-3F80-4BF9-8AD1-72B34D947906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935A8564-3F80-4BF9-8AD1-72B34D947906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935A8564-3F80-4BF9-8AD1-72B34D947906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935A8564-3F80-4BF9-8AD1-72B34D947906}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {246BB7F0-BA02-4191-80D8-D23F20CF1652}
+	EndGlobalSection
+EndGlobal

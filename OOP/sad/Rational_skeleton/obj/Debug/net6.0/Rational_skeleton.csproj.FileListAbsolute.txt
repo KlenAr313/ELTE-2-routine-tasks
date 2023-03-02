@@ -1,0 +1,15 @@
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\bin\Debug\net6.0\Rational_skeleton.exe
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\bin\Debug\net6.0\Rational_skeleton.deps.json
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\bin\Debug\net6.0\Rational_skeleton.runtimeconfig.json
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\bin\Debug\net6.0\Rational_skeleton.dll
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\bin\Debug\net6.0\Rational_skeleton.pdb
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.csproj.AssemblyReference.cache
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.AssemblyInfoInputs.cache
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.AssemblyInfo.cs
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.csproj.CoreCompileInputs.cache
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.dll
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\refint\Rational_skeleton.dll
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.pdb
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\Rational_skeleton.genruntimeconfig.cache
+C:\Users\h9mrbv\Documents\ELTE-2-routine-tasks\OOP\sad\Rational_skeleton\obj\Debug\net6.0\ref\Rational_skeleton.dll
