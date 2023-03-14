@@ -1,103 +1,102 @@
-/* egyedi betûtípus */ 
+/* egyedi betï¿½tï¿½pus */ 
  @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 
  
-/* kitöltendõ definíciók */
+/* kitï¿½ltendï¿½ definï¿½ciï¿½k */
 
-/*============== szöveg igazítások ============= */
+/*============== szï¿½veg igazï¿½tï¿½sok ============= */
 h1, footer p, figcaption, figure, video {
-    /* szöveg középre igazítása */
+    text-align: center;
 }
 
 p {
-   /* szöveg sorkizárt igazítása */
+   text-align: justify;
  }
 
 figure pre, nav#fomenu {
- 	  /* szöveg balra igazítása */
+ 	text-align: left; 
 }
 	
-/* ============= betûtípusok ============= */
+/* ============= betï¿½tï¿½pusok ============= */
 body { 
- 		 /* legyen Aria, Verdana, sans-serif */
+ 	font-family: Arial, Verdana, sans-serif;
 }   
 
 figcaption  {
-		 /* legyen kurzív */
-		 /* válasszunk egy megfelelõ google betûtípust! */
+	font-family: cursive;
+	font-family: "Dekko", cursive;
 }
 
-/* ============= betûméretek ============= */
+/* ============= betï¿½mï¿½retek ============= */
 
 h1 {
-		/* legyen háromszoros */
+	font-size: 3rem;
 }
+
 h2,h3,header nav#fomenu {
-		/* legyen másfélszeres */
-	}	
+	font-size: 1.5rem;
+}	
  
  
-/* ============= betû formázás ============= */
+/* ============= betï¿½ formï¿½zï¿½s ============= */
 aside h2, q {
-		/* legyen dõlt */
-	}
+	font-style: italic;
+}
  
  
- figcaption {
-		/* legyen félkövér */
- }
+figcaption {
+	font-weight: bold;
+}
  
- h1 {
-	 		/* legyen kiskapitális */
-	 	    /* 2px-es ritkított betûköz legyen */
- }
-
-
- p {
-		/* másfeles sortávolság legyen */
+h1 {
+	font-variant: small-caps;
+	letter-spacing: 2px;
 }
 
- a {
-			/* legyen csupa nagybetûs */
- }
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-transform: uppercase;
+}
  
- h1 {
- 	/* legyen szürke árnyék eltolva jobbra 5px, lefele 7px, elmosás legyen 3px */
- }
+h1 {
+	text-shadow: gray 5px 7px 3px;
+}
  
- p {
-	 	/* legyen egyszeres a behúzás */
-	 }
+p {
+	text-indent: 1rem;
+}
 	 
- p:first-of-type {
-	 	/* ne legyen behúzás */
-	 }
+p:first-of-type {
+	text-indent: 0;
+}
 	 
-/* ============== színek =============== */
+/* ============== szï¿½nek =============== */
 
 h3 {
-			/* legyen a #786f61 színkód */
-  }
+	color: #786f61;		/* legyen a #786f61 szï¿½nkï¿½d */
+}
  
 pre {
-		/* háttérszín legyen fekete */
-		/* szövegszín legyen fehér */
-	}
+	background-color: black;	/* hï¿½ttï¿½rszï¿½n legyen fekete */
+	color: wheat;	/* szï¿½vegszï¿½n legyen fehï¿½r */
+}
 	
 figure, video {
-		/* háttérszín legyen fekete */
-
-
+	background-color: black;
 }	
 
 figcaption {
-				/* legyen fehér a szöveg színe*/
+	color: wheat;
 }
 
  
  
  
-/* html és oldal tulajdonságai */
+/* html ï¿½s oldal tulajdonsï¿½gai */
 html {
 	background-color:darkgray;
 	background-image:url("../media/oldalhatter.jpg");
@@ -118,7 +117,7 @@ html {
 body,header {border-radius:20px 20px 0 0; }
 
 
-/* címsorok beállítása */
+/* cï¿½msorok beï¿½llï¿½tï¿½sa */
 h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -161,7 +160,7 @@ aside h2 {
 	transform:rotate(-90deg);
 	}
 
-/* linkek beállítása*/
+/* linkek beï¿½llï¿½tï¿½sa*/
 
 header nav#fomenu a, header nav#fomenu b {padding:0 30px 0 0;}
 
@@ -182,13 +181,13 @@ nav#oldalmenu a:hover, header nav#oldalmenu a:focus  {
 	transition: all 0.5s ease-in;
 	}
 
-/* blokkok elkerülése */
+/* blokkok elkerï¿½lï¿½se */
 nav#tartalomraugras a {position:absolute; left:-9999px}
 nav#tartalomraugras a:focus {position:static; background-color:white}
 
 
-/* listák */
-/* sorszámozott listák speciális átalakítása */
+/* listï¿½k */
+/* sorszï¿½mozott listï¿½k speciï¿½lis ï¿½talakï¿½tï¿½sa */
 ol {
 	break-before: always;
     counter-reset:li; 
@@ -225,7 +224,7 @@ li ol,
 li ul {margin-top:6px;}
 ol ol li:last-child {margin-bottom:0;}
 
-/* szövegelemek */
+/* szï¿½vegelemek */
 
 
 details p {
@@ -242,7 +241,7 @@ overflow:auto;
 }
 
 
-/* képek, videók, médiaelemek */
+/* kï¿½pek, videï¿½k, mï¿½diaelemek */
 
 
 
@@ -289,7 +288,7 @@ figure {
 
 #canvas {float:right;}
 
-/* táblázat beállításai */
+/* tï¿½blï¿½zat beï¿½llï¿½tï¿½sai */
 
 table {border-collapse:collapse;}
 th {text-align:left}
@@ -340,7 +339,7 @@ section {width:100%}
 nav#fomenu 
 {
 	background-color: black;
-	width:400px;
+	width:415px;
 	opacity:0.8;
 }
 
@@ -371,7 +370,7 @@ main {padding-top:20px;}
 
 .rejtett {position:absolute; left:-9999px;}
 	 
-/* ûrlap */
+/* ï¿½rlap */
 
 
 fieldset {
@@ -382,7 +381,7 @@ fieldset {
 	margin-bottom:10px;
 }
 
-/* stílusok az 1. töréspontra */
+/* stï¿½lusok az 1. tï¿½rï¿½spontra */
 
 @media screen and (min-width: 992px) 
 {
@@ -402,7 +401,7 @@ aside {float:none}
 	 
 }
 
-/* stílusok a 2. töréspontra */
+/* stï¿½lusok a 2. tï¿½rï¿½spontra */
 
 @media screen and (max-width: 576px) 
 {
@@ -436,7 +435,7 @@ aside {float:none}
 	 }	
 }
 
-/* nyomtatási stíluslap */
+/* nyomtatï¿½si stï¿½luslap */
 @media print {
 	
 	@page {
@@ -458,7 +457,7 @@ aside {float:none}
 
 	nav {display:none}	/* ne jelenjen meg a nav elem */
 
-	a:after { content: " (" attr(href) ")";}  /* a linkek után jelenjen meg a href paraméter értéke*/		
+	a:after { content: " (" attr(href) ")";}  /* a linkek utï¿½n jelenjen meg a href paramï¿½ter ï¿½rtï¿½ke*/		
 	
 	h2#temegen {page-break-before:always}
 	h2#deepweb {page-break-before:always}
