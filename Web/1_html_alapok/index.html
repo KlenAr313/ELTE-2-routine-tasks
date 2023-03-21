@@ -48,13 +48,27 @@
             <h2 id="kozossegihalo"><cite>Social Network - A közösségi háló </cite></h2>
             <aside>
                 <h2>Adatlap</h2>
-                <strong>A film adatai</strong>
-                Súgó
-                <p>A táblázatban a filmre vonatkozó adatokat (Bemutató, Angol cím, <abbr
-                        title="Internet Movie Database">IMDb</abbr> pontszám tüntetjük fel.)</p>
-                Bemutató: <time datetime="2010-10-01">2010. október 1.</time>
-                Angol cím: <cite>The Social Network</cite>
-                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: 7.7/10
+                <table>
+                    <caption>
+                        <strong>A film adatai</strong>
+                        <details>
+                            <summary>Súgó</summary>
+                            <p>asdasdas</p>
+                        </details>
+                    </caption>
+                    <tr>
+                        <th scope="row">Bemutató:</th>
+                        <td><time datetime="2010-10-01">2010. október 1.</time></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Angol cím</th>
+                        <td><cite>The Social Network</cite></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><abbr title="Internet Movie Database">IMDb</abbr> Értékelés:</th>
+                        <td> <meter max="10" min="0" value="7.7" ></meter> 7.7/10</td>
+                    </tr>
+                </table>
             </aside>
             <p>
                 <cite>Mark Zuckerberg</cite> jobban ért a számítógépekhez, mint a csajozáshoz. A Harvard egyetem diákja
@@ -129,7 +143,7 @@ while ($page =~ m/compactshow\.php\?student_id=([0-9]+)/g) {
                         title="Internet Movie Database">IMDb</abbr> pontszám tüntetjük fel.)</p>
                 Bemutató: <time datetime="2014-01-10">2014. január 10.</time>
                 Angol cím: <cite>Her</cite>
-                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: 8/10
+                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: <meter max="10" min="0" value="8" ></meter> 8/10
             </aside>
             <p>
                 Los Angelesben, a közeli jövőben él Theodore Twombly író, aki abból él, hogy <b>megható, személyes
@@ -164,7 +178,7 @@ while ($page =~ m/compactshow\.php\?student_id=([0-9]+)/g) {
                         title="Internet Movie Database">IMDb</abbr> pontszám tüntetjük fel.)</p>
                 Bemutató: <time datetime="2005-08-05">2005. augusztus 5.</time>
                 Angol cím:<cite>Me And You And Everyone We Know</cite>
-                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: 7,4/10
+                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: <meter max="10" min="0" value="7.4" ></meter> 7,4/10
             </aside>
             <p>
                 Miranda July, multimédia-performer és zenész éleslátó és rendkívül szórakoztató filmet készített olyan
@@ -199,7 +213,7 @@ while ($page =~ m/compactshow\.php\?student_id=([0-9]+)/g) {
                         title="Internet Movie Database">IMDb</abbr> pontszám tüntetjük fel.)</p>
                 Bemutató: <time datetime="2015-11-21">2015. november 21.</time>
                 Angol cím:<cite>Deep web</cite>
-                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: 7,1/10
+                <abbr title="Internet Movie Database">IMDb</abbr> értékelés: <meter max="10" min="0" value="7.1" ></meter> 7,1/10
             </aside>
             <p>
                 Az internet nem csak hírportálokból, közösségi oldalakból és cuki állatos videókból áll. A
@@ -247,7 +261,7 @@ while ($page =~ m/compactshow\.php\?student_id=([0-9]+)/g) {
         <address>
             <p>Készítette: Gipsz Jakab <br>(<a
                     href="mailto:gipszjakab@mailinator.com">gipszjakab@mailinator.com</a>)<br>
-                1117 Budapest, Nevenincs u. 17</p>
+                1117 Budapest, Nevenincs u. <meter max="40" min="0" value="17" ></meter> 17</p>
         </address>
     </footer>
 </body>
