@@ -10,18 +10,16 @@ namespace Bag
     internal class Bag
     {
         private List<Element> data { get; set; }
-        public int? maxind { get; set; }
+        public int maxind { get; set; }
 
         public Bag()
         {
             data = new List<Element>();
-            maxind = null;
         }
 
         public void SetEmpty()
         {
             data.Clear();
-            maxind = null;
         }
 
         public bool Empty()
@@ -29,35 +27,70 @@ namespace Bag
             return data.Count == 0;
         }
 
-        private int Search(int num)
+        private (bool,int) LogSearch(int num)
         {
-            for (int i = 0; i < data.Count; i++)
+            bool I = false;
+            int ah = 0;
+            int fh = data.Count - 1;
+            int ind = -1;
+            while (!I && ah <= fh)
             {
-                if (data[i].number == num)
+                ind = (ah + fh) / 2;
+                if (data[ind].number > num)
                 {
-                    return i;
+                    fh = ind - 1;
+                }
+                else if (data[ind].number == num)
+                {
+                    I = true;
+                }
+                else if (data[ind].number < num)
+                {
+                    ah = ind + 1;
                 }
             }
-            return -1;
+
+            if (!I)
+            {
+                ind = ah;
+            }
+
+            return (I,ind);
         }
 
         public void Insert(int num)
         {
-            int ind = Search(num);
-            if (ind == -1)
+            int ind;
+            bool I;
+            (I, ind) = LogSearch(num);
+            if (I)
             {
-                data.Add(new Element(num));
+                data[ind].Add();
+                if (data[maxind].Get() < data[ind].Get())
+                {
+                    maxind = ind;
+                }
             }
             else
             {
-                data[ind].Add();
+                data.Insert(ind, new Element(num));
+                if (data.Count == 1)
+                {
+                    maxind = 0;
+                }
+                else if (data.Count > 1 && maxind >= ind)
+                {
+                    maxind = ind;
+                }
             }
         }
 
         public int Multipl(int num)
         {
-            int ind = Search(num);
-            if (ind != -1)
+            bool I;
+            int ind;
+            (I, ind)= LogSearch(num);
+            if (I)
             {
                 return data[ind].Get();
             }
@@ -66,8 +99,10 @@ namespace Bag
 
         public void Remove(int num)
         {
-            int ind = Search(num);
-            if(ind != -1)
+            bool I;
+            int ind; 
+            (I, ind) = LogSearch(num);
+            if(I)
             {
                 data[ind].Sub();
                 if (data[ind].Get() == 0)
@@ -75,22 +110,26 @@ namespace Bag
                     data.RemoveAt(ind);
                 }
             }
-        }
 
-        public int Max()
-        {
-            if (data.Count != 0)
+            if(data.Count > 0)
             {
                 int maxI = 0;
                 for (int i = 1; i < data.Count; i++)
                 {
-                    if (data[i].Get() > data[maxI].Get())
+                    if (data[maxI].Get() < data[i].Get())
                     {
                         maxI = i;
                     }
                 }
-                this.maxind = maxI;
-                return data[maxI].number;
+                maxind = maxI;
+            }
+        }
+
+        public int Max()
+        {
+            if (data.Count > 0)
+            {
+                return data[maxind].number;
             }
             throw new Exception("Bag is empty");
         }
