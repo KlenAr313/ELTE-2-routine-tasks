@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázatok</title>
+</head>
+<body>
+    <table border="solid">
+        <caption>
+            <strong>Egyetemek adatai</strong>
+            <detail>
+                <summary>Súgó</summary>
+                <p>Az alábbi táblázatban három ahazai egyetem adatait találod</p>
+            </detail>
+        </caption>
+        <tr>
+            <th scope="col">Egyetem</th>
+            <th scope="col">Székhely</th>
+            <th scope="col">Weboldal</th>
+            <th scope="col">Karok száma</th>
+        </tr>
+        <tr>
+            <th scope="row">ELTE</th>
+            <td colspan="2">Budapest</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th scope="row">Debreceni Egyetem</th>
+            <td>Debrecen</td>
+            <td></td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <th scope="row">Szécheny István Egyetem</th>
+            <td>Győr</td>
+            <td></td>
+            <td>Sok</td>
+        </tr>
+    </table>
+</body>
+</html>
+<style>
+    th,td {
+        padding: 5px;
+    }
+</style>

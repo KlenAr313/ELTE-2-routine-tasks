@@ -143,10 +143,6 @@ main>article>h2 {
 	padding:10px 20px 10px 60px;
 }
 
-main>article>h2:last-of-type {
-	background:none;
-	padding:10px;
-}
 
 
 h3 {
