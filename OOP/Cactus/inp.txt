@@ -1,0 +1,5 @@
+karacsonyi	piros	spanyol		10
+szuros		feher	mexico		1000
+
+magas		kek		mexico		20
+alacsony	pink	usa			1
