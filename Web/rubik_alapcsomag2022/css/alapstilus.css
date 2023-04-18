@@ -1,0 +1,151 @@
+/* alap stílus */
+
+/*betűtípus importálás*/
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+
+body {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    background-color: black;
+    background-image: url('../kepek/hatter_felso.jpg'), url('../kepek/hatter_also.jpg');
+    background-repeat: no-repeat, repeat-x;
+    background-position: 10px 0px, left bottom;
+    margin-bottom: 100px;
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 3px 3px 3px #ccc;
+}
+
+p {
+    text-align: justify;
+}
+
+header,
+main,
+footer {
+    width: 70%;
+    min-width: 400px;
+    max-width: 1000px;
+    margin: 0px auto;
+    background-color: white;
+    padding: 10px;
+}
+
+header,
+footer {
+    opacity: 0.9;
+}
+
+header {
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+footer {
+    border-radius: 0px 0px 10px 10px;
+}
+
+article {
+    margin: 0 2em;
+    border-bottom: 1px dotted gray;
+    padding-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+article:last-of-type {
+    border: 0;
+}
+
+article+nav {
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+a[href="#oldalmenu"] {
+    text-decoration: none;
+}
+
+header nav ul li {
+    display: inline;
+    white-space: nowrap;
+}
+
+header nav a {
+    text-decoration: none;
+    font-variant: small-caps;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+header nav a:link {
+    color: black;
+}
+
+header nav a:visited {
+    color: #666;
+}
+
+header nav a:hover {
+    color: purple;
+}
+
+.kipozicional a {
+    position: absolute;
+    left: -9999px;
+}
+
+.kipozicional a:focus {
+    position: static;
+    background-color: white;
+}
+
+nav#oldalmenu li span {
+
+    background-image: url('../kepek/ikonkeszlet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+nav#oldalmenu li:nth-child(1) span {
+    background-position: 0 0;
+}
+
+nav#oldalmenu li:nth-child(2) span {
+    background-position: -60px 0;
+}
+
+nav#oldalmenu li:nth-child(3) span {
+    background-position: -120px 0;
+}
+
+nav#oldalmenu li:nth-child(4) span {
+    background-position: -180px 0;
+}
+
+nav#oldalmenu li:hover span {
+    transform: scale(1.3);
+}
+
+nav#gyengenlato {
+    position: absolute;
+    width: 210px;
+    right: 20px;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 0 10px 0 0;
+}
+
+nav#gyengenlato span{
+    background-image: url(../kepek/ikonkeszlet.png);
+}
