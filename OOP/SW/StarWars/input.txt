@@ -1,0 +1,9 @@
+2
+Coruscant   3
+first   Breaker 3   3   3
+second	Laser	2	2	2
+third	Lander  1   1   1
+Alderaan   3
+fourth  Laser	6	6	6
+fifth	Laser	7	7	7
+sixth	Laser	8	8	8
