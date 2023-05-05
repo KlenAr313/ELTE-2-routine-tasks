@@ -10,8 +10,17 @@ namespace _4szorg
     {
         private Dictionary<Bank, List<Card>> Banks { get; set; }
 
-        public Center()
-        {}
+        public Center(List<Bank> banks, List<List<Card>> cards)
+        {
+            this.Banks = new Dictionary<Bank, List<Card>>();
+            List<Card> list;
+            for (int i = 0; i < banks.Count; i++)
+            {
+                list = new List<Card>();
+                cards[i].ForEach(c => list.Add(c));
+                this.Banks.Add(banks[i], list);
+            }
+        }
 
         public int GetBalance(string cardNumber)
         {

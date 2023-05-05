@@ -11,7 +11,11 @@ namespace _4szorg
         public string CardNumber { get; set; }
         private string PIN { get; set; }
 
-        public Card() { }
+        public Card(string CardNumber, string PIN) 
+        {
+            this.CardNumber = CardNumber;
+            this.PIN = PIN;
+        }
 
         public bool CheckPin(string PIN)
         {

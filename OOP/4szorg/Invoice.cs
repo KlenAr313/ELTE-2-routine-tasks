@@ -12,9 +12,12 @@ namespace _4szorg
         private int Balance { get; set; }
         public List<Card> Cards { get; set; }
 
-        public Invoice()
+        public Invoice(string InvoiceNumber, int Balance, List<Card> cards)
         {
-            
+            this.InvoiceNumber = InvoiceNumber;
+            this.Balance = Balance;
+            this.Cards = new List<Card>();
+            cards.ForEach(i=> this.Cards.Add(i));
         }
 
         public int GetBalance()

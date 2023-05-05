@@ -11,7 +11,11 @@ namespace _4szorg
     {
         private List<Invoice> Invoices { get; set; }
 
-        public Bank() { }
+        public Bank(List<Invoice> invoices) 
+        {
+            this.Invoices = new List<Invoice>();
+            invoices.ForEach(i=> this.Invoices.Add(i));
+        }
 
         public void OpenInvoice() { 
         }

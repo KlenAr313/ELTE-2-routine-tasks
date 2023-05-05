@@ -11,9 +11,10 @@ namespace _4szorg
         private Center center { get; set;}
         public string place { get; set; }
 
-        public ATM()
+        public ATM(string place, Center center)
         {
-            
+            this.center = center;
+            this.place = place;
         }
 
         public void Process(Client client)

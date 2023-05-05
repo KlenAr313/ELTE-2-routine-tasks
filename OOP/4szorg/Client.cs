@@ -10,12 +10,25 @@ namespace _4szorg
     {
         public List<Card> Cards { get; set; }
         private List<string> Pins { get; set; }
-        public List<Invoice> Invoices { get; set; }
+        //public List<Invoice> Invoices { get; set; }
         private int need { get; set; }
 
-        public Client()
+        public Client(Card card, string pin, int need)
         {
-            
+            Cards = new List<Card>();
+            Pins = new List<string>();
+            Cards.Add(card);
+            Pins.Add(pin);
+            this.need = need;
+        }
+
+        public Client(List<Card> Cards, List<string> Pins, int need)
+        {
+            this.Cards = new List<Card>();
+            this.Pins = new List<string>();
+            Cards.ForEach(i => this.Cards.Add(i));
+            Pins.ForEach(i => this.Pins.Add(i));
+            this.need = need;
         }
 
         public void getMoney(ATM atm)
