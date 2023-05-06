@@ -23,9 +23,11 @@ namespace _4szorg
             if (card.CheckPin(client.givePIN()))
             {
                 int amount = client.askMoney();
-                if (center.GetBalance(card.CardNumber) > amount)
+                int have = center.GetBalance(card.CardNumber);
+                if (have > amount)
                 {
                     center.ModifieBalace(card.CardNumber, (-1) * amount);
+                    client.add(amount);
                 }
                 else { throw new Exception($"Not enough Money"); }
             }

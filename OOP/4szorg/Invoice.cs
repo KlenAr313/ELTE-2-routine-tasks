@@ -19,6 +19,14 @@ namespace _4szorg
             this.Cards = new List<Card>();
             cards.ForEach(i=> this.Cards.Add(i));
         }
+        
+        public Invoice(string InvoiceNumber, int Balance, Card card)
+        {
+            this.InvoiceNumber = InvoiceNumber;
+            this.Balance = Balance;
+            this.Cards = new List<Card>();
+            this.Cards.Add(card);
+        }
 
         public int GetBalance()
         {

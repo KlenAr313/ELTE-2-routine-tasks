@@ -46,8 +46,7 @@ namespace _4szorg
         {
             foreach (var bank in Banks)
             {
-                //if (invoice.Cards.Where(i => i.CardNumber == cardNumber) != null)
-                if(bank.Value.Where<Card>(i => i.CardNumber.Equals(cardNumber)) != null)
+                if(bank.Value.Where<Card>(i => i.CardNumber.Equals(cardNumber)).Count() != 0)
                 {
                     return (true, bank.Key);
                 }

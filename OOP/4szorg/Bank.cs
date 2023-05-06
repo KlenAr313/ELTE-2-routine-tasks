@@ -49,7 +49,7 @@ namespace _4szorg
         {
             foreach (Invoice invoice in Invoices)
             {
-                if (invoice.Cards.Where(i => i.CardNumber == cardNumber) != null)
+                if (invoice.Cards.Where(i => i.CardNumber == cardNumber).Count() != 0)
                 {
                     return (true, invoice);
                 }

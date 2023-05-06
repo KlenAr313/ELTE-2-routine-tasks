@@ -12,6 +12,7 @@ namespace _4szorg
         private List<string> Pins { get; set; }
         //public List<Invoice> Invoices { get; set; }
         private int need { get; set; }
+        private int have { get; set; }
 
         public Client(Card card, string pin, int need)
         {
@@ -20,6 +21,7 @@ namespace _4szorg
             Cards.Add(card);
             Pins.Add(pin);
             this.need = need;
+            have = 0;
         }
 
         public Client(List<Card> Cards, List<string> Pins, int need)
@@ -29,9 +31,10 @@ namespace _4szorg
             Cards.ForEach(i => this.Cards.Add(i));
             Pins.ForEach(i => this.Pins.Add(i));
             this.need = need;
+            have = 0;
         }
 
-        public void getMoney(ATM atm)
+        public void useATM(ATM atm)
         {
             atm.Process(this);
         }
@@ -59,6 +62,21 @@ namespace _4szorg
         public int askMoney()
         {
             return need;
+        }
+
+        public void setNeed(int need)
+        {
+            this.need = need;
+        }
+
+        public int getHave()
+        {
+            return have;
+        }
+
+        public void add(int amount)
+        {
+            have += amount;
         }
     }
 }
