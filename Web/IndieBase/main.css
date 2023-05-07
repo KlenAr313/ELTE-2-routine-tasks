@@ -1,0 +1,23 @@
+img{
+    max-width: 800px;
+}
+
+main{
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    background-color: bisque;
+}
+
+p{
+    width: 700px;
+    margin: 20px auto;
+}
+
+img#cover{
+    max-width: 200px;
+}
+
+body{
+    background-color: beige;
+}
