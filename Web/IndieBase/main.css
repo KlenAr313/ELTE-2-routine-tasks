@@ -6,7 +6,7 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgb(60, 25, 0);
+    background-color: #3C1900;
     color: #e9dede;
     padding: 5px;
 }
@@ -25,10 +25,13 @@ header nav{
     margin: auto;
 }
 
-
 header nav ul li {
     display: inline;
     white-space: nowrap;
+}
+
+header nav ul li#selected{
+    font-weight: bold;
 }
 
 header nav a {
