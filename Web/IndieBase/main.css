@@ -71,22 +71,52 @@ nav#tartalomraugras a:focus {
 
 /* MAIN */
 main {
-    width: 900px;
+    max-width: 900px;
     margin: auto;
-    text-align: center;
+    text-align: justify;
     background-color: bisque;
     padding: 10px;
 }
 
-img {
+main article{
+    column-count: 2 ;
+    margin: 30px 5px;
+}
+
+main figure{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border: solid 2px#3C1900;
+    border-radius: 5px;
+}
+
+main img {
     max-width: 800px;
 }
 
-p {
-    width: 700px;
-    margin: 20px auto;
+main img#cover {
+    max-width: 200px;
 }
 
-img#cover {
-    max-width: 200px;
+main h1,h2{
+    text-align: center;
+}
+
+main p {
+    width: 700px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+
+main ul li{
+    font-size: 1.2rem;
+}
+
+span#spoiler{
+    width: auto;
+}
+
+span#spoilere p{
+    text-align: center;
 }
