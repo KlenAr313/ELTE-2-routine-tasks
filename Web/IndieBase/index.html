@@ -119,17 +119,50 @@
                 </figure>
             </article>
         </div>
-        <p>Ha valami kérdésed, megjegyzésed lenne a játékkal kapcsolatban, esetleg valamilyen másik indie játékot
-            szeretnél
-            javasolni azt itt megteheted.</p>
+        <hr>
+        <div class="form">
+            <p>Ha valami kérdésed, megjegyzésed lenne a játékkal kapcsolatban, esetleg valamilyen másik indie játékot
+                szeretnél
+                javasolni azt itt megteheted.</p>
 
+            <form action="mailto:h9mrbv@inf.elte.hu" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Üzenet típusa:</legend>
+                    <input type="radio" name="type" id="megj" checked>
+                    <label for="megj">Megjegyzés</label><br>
+                    <input type="radio" name="type" id="rec">
+                    <label for="rec">Játék ajánlása</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Oszd meg gondolataid:</legend>
+                    <textarea name="message" id="message" cols="55" rows="10" minlength="20" maxlength="400" required
+                        placeholder="Kérlek fejts ki a gondolatodat több mondatban a témának megfelelően"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Feliratkozás</legend>
+                    <label for="sub">Szeretnék feliratkozni a hírlevélre</label>
+                    <input type="checkbox" name="feliratkozas" id="sub">
+                </fieldset>
+                <fieldset>
+                    <legend>Email-címed:</legend>
+                    <input type="email" name="email" id="email" size="50" maxlength="40" minlength="5" required
+                        placeholder="Eamil-cím">
+                </fieldset>
+                <fieldset>
+                    <legend>Üzenet küldése</legend>
+                    <input type="submit" value="Elküldés">
+                    <input type="reset" value="Törlés">
+                </fieldset>
+            </form>
+        </div>
+        <hr>
         <h2>Források a játékok adataihoz:</h2>
-        <p><a href="https://en.wikipedia.org/wiki/Call_of_the_Sea">https://en.wikipedia.org/wiki/Call_of_the_Sea</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Call_of_the_Sea" target="_blank">https://en.wikipedia.org/wiki/Call_of_the_Sea</a></p>
         <p><a
-                href="https://en.wikipedia.org/wiki/Sayonara_Wild_Hearts">https://en.wikipedia.org/wiki/Sayonara_Wild_Hearts</a>
+                href="https://en.wikipedia.org/wiki/Sayonara_Wild_Hearts" target="_blank">https://en.wikipedia.org/wiki/Sayonara_Wild_Hearts</a>
         </p>
         <p><a
-                href="https://en.wikipedia.org/wiki/Celeste_(video_game)">https://en.wikipedia.org/wiki/Celeste_(video_game)</a>
+                href="https://en.wikipedia.org/wiki/Celeste_(video_game)" target="_blank">https://en.wikipedia.org/wiki/Celeste_(video_game)</a>
         </p>
     </main>
     <footer></footer>

@@ -4,7 +4,8 @@ body {
     background-size: 60%;
     padding: 0px;
     margin: 0px;
-    background-color: beige;
+    background-color: #f5f5dc;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* HEADER */
@@ -136,6 +137,25 @@ main video{
     background-color: #914400;
 }
 
+main table{
+    border: #914400 5px solid;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+main table td, main table th{
+    padding: 5px;
+    border: #3C1900 solid 1px;
+    font-size: 1.2rem;
+}
+
+main table summary, main table p{
+    font-size: 1.2rem;
+    margin: 2px auto;
+}
+
 main h1,h2{
     text-align: center;
 }
@@ -153,7 +173,37 @@ main ul li{
     font-size: 1.3rem;
 }
 
-span#spoiler{
+main span#spoiler{
     width: 100%;
     text-align: center;
 }
+
+main form fieldset{
+    padding-bottom: 25px;
+    border: none;
+    margin: auto;
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+main form legend{
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+main form textarea, main form input{
+    font-size: 1rem;
+}
+
+main form input[type="submit"]{
+    margin-right: 20px;
+}
+
+main a{
+    color: #3C1900;
+}
+
+main a:visited{
+    color: #8b521f;
+}
+
