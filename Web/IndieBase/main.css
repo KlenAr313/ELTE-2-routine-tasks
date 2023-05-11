@@ -1,7 +1,10 @@
 body {
-    background-color: beige;
+    background-image: url(./images/background.jpg);
+    background-repeat: repeat;
+    background-size: 60%;
     padding: 0px;
     margin: 0px;
+    background-color: beige;
 }
 
 /* HEADER */
@@ -71,7 +74,7 @@ nav#tartalomraugras a:focus {
 
 /* MAIN */
 main {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     text-align: justify;
     background-color: bisque;
@@ -79,24 +82,58 @@ main {
 }
 
 main article{
-    column-count: 2 ;
+    column-count: 2;
     margin: 30px 5px;
 }
 
-main figure{
-    margin: auto;
-    text-align: center;
-    padding: 10px;
-    border: solid 2px#3C1900;
-    border-radius: 5px;
+main article:nth-child(4){
+    direction: rtl;
 }
 
-main img {
+main article h2, main article aside{
+    direction: ltr;
+}
+
+main figure{
+    width: fit-content;
+    margin: 30px auto;
+    text-align: center;
+    padding: 15px;
+    border: solid 2px #914400;
+    border-radius: 10px;
+    background-color: #914400;
+}
+
+main img{
     max-width: 800px;
+    border: solid 2px #914400;
+    border-radius: 10px;
+}
+
+main figure figcaption{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #e9dede;
 }
 
 main img#cover {
     max-width: 200px;
+}
+
+main div.video{
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+main video{
+    max-width: 800px;
+    width: fit-content;
+    margin: auto;
+    padding: 15px;
+    border: solid 2px #914400;
+    border-radius: 10px;
+    background-color: #914400;
 }
 
 main h1,h2{
@@ -104,19 +141,19 @@ main h1,h2{
 }
 
 main p {
-    width: 700px;
-    margin: 20px auto;
-    font-size: 1.2rem;
+    width: 70%;
+    margin: 25px auto;
+    font-size: 1.3rem;
 }
 
+main ul{
+    margin-left: 20%;
+}
 main ul li{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 span#spoiler{
-    width: auto;
-}
-
-span#spoilere p{
+    width: 100%;
     text-align: center;
 }
