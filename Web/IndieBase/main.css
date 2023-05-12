@@ -8,7 +8,6 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     text-align: center;
-    padding-bottom: 500px;
 }
 
 /* HEADER */
@@ -228,10 +227,46 @@ main form input[type="submit"]{
 
 /* FOOTER */
 footer{
+    color: #FFFFFF;
     background-color: #8b521f;
     padding: 0px;
     margin: 0px;
-    position: absolute;
+    display: inline-block;
     width: 100%;
     bottom: 0;
+    text-align: justify;
+}
+
+footer div.foot{
+    width: 1000px;
+    display: flex;
+    margin: 0px auto 20px auto;
+}
+
+footer div.foot div{
+    margin: auto;
+}
+
+footer h1{
+    font-size: 1.8rem;
+}
+
+footer h2{
+    text-align: justify;
+    font-size: 1.1rem;
+    margin: 5px 20px;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+footer a{
+    color: #FFFFFF;
+}
+
+footer a:visited{
+    color: #DEDEDE;
 }
