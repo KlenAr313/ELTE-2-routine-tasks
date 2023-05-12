@@ -8,6 +8,7 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     text-align: center;
+    font-size: 105%;
 }
 
 /* HEADER */
@@ -19,7 +20,7 @@ header {
 
 header div{
     display: flex;
-    width: 1000px;
+    width: 55%;
     margin: auto;
 }
 
@@ -77,7 +78,7 @@ nav#tartalomraugras a:focus {
 
 /* MAIN */
 main {
-    max-width: 1000px;
+    max-width: 52%;
     margin: auto;
     text-align: justify;
     background-color: bisque;
@@ -111,14 +112,15 @@ main section h2{
 main p {
     width: 70%;
     margin: 25px auto;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 main ul{
     margin-left: 20%;
 }
+
 main ul li{
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 main span.spoiler{
@@ -136,43 +138,42 @@ main a:visited{
 
 /* IMAGE */
 main figure{
-    width: fit-content;
+    width: 80%;
     margin: 30px auto;
     text-align: center;
-    padding: 15px;
+    padding: 2.7%;
     border: solid 2px #914400;
     border-radius: 10px;
     background-color: #914400;
 }
 
 main img{
-    max-width: 800px;
+    width: 100%;
     border: solid 2px #914400;
     border-radius: 10px;
 }
 
 main figure figcaption{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     margin-top: 10px;
     color: #e9dede;
 }
 
-main img.cover {
-    max-width: 200px;
+main figure.cover {
+    max-width: 50%;
 }
 
 /* VIDEO */
 main div.video{
-    width: 100%;
+    width: 80%;
     margin: 40px auto;
     text-align: center;
 }
 
 main video{
-    max-width: 800px;
-    width: fit-content;
+    max-width: 100%;
     margin: auto;
-    padding: 15px;
+    padding: 2.7%;
     border: solid 2px #914400;
     border-radius: 10px;
     background-color: #914400;
@@ -190,11 +191,11 @@ main table{
 main table td, main table th{
     padding: 5px;
     border: #3C1900 solid 1px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 main table summary, main table p{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin: 2px auto;
 }
 
@@ -209,7 +210,7 @@ main form fieldset{
     border: none;
     margin: auto;
     width: 50%;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 main form legend{
@@ -218,7 +219,7 @@ main form legend{
 }
 
 main form textarea, main form input{
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 main form input[type="submit"]{
@@ -238,7 +239,7 @@ footer{
 }
 
 footer div.foot{
-    width: 1000px;
+    width: 50%;
     display: flex;
     margin: 0px auto 20px auto;
 }
@@ -248,12 +249,12 @@ footer div.foot div{
 }
 
 footer h1{
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 footer h2{
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     margin: 5px 20px;
 }
 
@@ -269,4 +270,22 @@ footer a{
 
 footer a:visited{
     color: #DEDEDE;
+}
+
+@media screen and (min-width: 1921px){
+    body{
+        font-size: 210%;
+    }
+
+    main figure{
+        border-radius: 20px;
+    }
+
+    main img{
+        border-radius: 20px;
+    }
+
+    main video{
+        border-radius: 20px;
+    }
 }
