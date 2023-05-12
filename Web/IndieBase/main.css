@@ -6,6 +6,9 @@ body {
     margin: 0px;
     background-color: #f5f5dc;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    text-align: center;
+    padding-bottom: 500px;
 }
 
 /* HEADER */
@@ -80,6 +83,7 @@ main {
     text-align: justify;
     background-color: bisque;
     padding: 10px;
+    display: inline-block;
 }
 
 main article{
@@ -95,6 +99,43 @@ main article h2, main article aside{
     direction: ltr;
 }
 
+main h1, h2{
+    text-align: center;
+}
+
+main section h2{
+    margin: auto;
+    width: 70%;
+    text-align: justify;
+}
+
+main p {
+    width: 70%;
+    margin: 25px auto;
+    font-size: 1.3rem;
+}
+
+main ul{
+    margin-left: 20%;
+}
+main ul li{
+    font-size: 1.3rem;
+}
+
+main span.spoiler{
+    width: 100%;
+    text-align: center;
+}
+
+main a{
+    color: #3C1900;
+}
+
+main a:visited{
+    color: #8b521f;
+}
+
+/* IMAGE */
 main figure{
     width: fit-content;
     margin: 30px auto;
@@ -117,10 +158,11 @@ main figure figcaption{
     color: #e9dede;
 }
 
-main img#cover {
+main img.cover {
     max-width: 200px;
 }
 
+/* VIDEO */
 main div.video{
     width: 100%;
     margin: 40px auto;
@@ -137,6 +179,7 @@ main video{
     background-color: #914400;
 }
 
+/* TABLE */
 main table{
     border: #914400 5px solid;
     margin: auto;
@@ -156,28 +199,12 @@ main table summary, main table p{
     margin: 2px auto;
 }
 
-main h1,h2{
-    text-align: center;
+main div.table{
+    margin-bottom: 25px;
 }
 
-main p {
-    width: 70%;
-    margin: 25px auto;
-    font-size: 1.3rem;
-}
 
-main ul{
-    margin-left: 20%;
-}
-main ul li{
-    font-size: 1.3rem;
-}
-
-main span#spoiler{
-    width: 100%;
-    text-align: center;
-}
-
+/* FORM */
 main form fieldset{
     padding-bottom: 25px;
     border: none;
@@ -199,11 +226,12 @@ main form input[type="submit"]{
     margin-right: 20px;
 }
 
-main a{
-    color: #3C1900;
+/* FOOTER */
+footer{
+    background-color: #8b521f;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
-
-main a:visited{
-    color: #8b521f;
-}
-
