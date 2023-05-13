@@ -206,6 +206,7 @@ main div.table{
 
 /* FORM */
 main form fieldset{
+    text-align: start;
     padding-bottom: 25px;
     border: none;
     margin: auto;
