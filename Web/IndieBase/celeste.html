@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Celeste - Elemzés</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="nagybetus.css" title="nagybetus">
+    <script type="text/javascript" src="./styleswitcher.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,11 @@
                     <li><a href="./sayonara.html"><cite lang="en">Sayonara Wild Hearts</cite></a></li>
                     <li id="selected"><a href="./celeste.html"><cite lang="en">Celeste</cite></a></li>
                 </ul>
+            </nav>
+            <nav id="gyengenlato">
+                <a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
+                    változat</a>
+                <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
             </nav>
         </div>
     </header>

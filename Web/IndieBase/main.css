@@ -12,62 +12,87 @@ body {
 }
 
 /* HEADER */
-header {
+header, #header {
     background-color: #3C1900;
     color: #e9dede;
     padding: 5px;
 }
 
-header div{
+header div , #header div{
     display: flex;
-    width: 55%;
+    width: 95%;
     margin: auto;
 }
 
-header h1{
+header h1, #header h1{
     margin: auto;
 }
 
-header nav{
+header nav, #header div{
     margin: auto;
 }
 
-header nav ul li {
+header nav#gyengenlato, #header #gyengenlato{
+    text-align: center;
+    border: #8b521f solid 3px;
+    border-radius: 6px;
+}
+
+header nav#gyengenlato:hover, #header #gyengenlato:hover{
+    background-color: #2a1202;
+    font-style: italic;
+}
+
+header nav#gyengenlato a, #header #gyengenlato a{
+    margin: 3px 6px;
+    text-decoration: none;
+}
+
+header nav ul li, #header div ul li{
     display: inline;
     white-space: nowrap;
 }
 
-header nav ul li#selected{
+header nav ul li#selected, #header div ul li#selected{
     font-weight: bold;
+    font-size: 1.1em;
 }
 
-header nav a {
+header nav a,  #header div a {
     text-decoration: none;
     font-size: 1.5em;
     margin-right: 1em;
 }
 
-header nav a:link {
+header nav a:link, #header div a:link {
     color: #e9dede;
 }
 
-header nav a:visited {
+header nav a:visited, #header div a:visited {
     color: #dcd7d7;
 }
 
-header nav a:hover {
+header nav a:hover, #header div a:hover {
     text-decoration: underline;
 }
 
-nav#tartalomraugras a {
+nav#tartalomraugras a, div#tartalomraugras a{
     position: absolute;
     left: -9999px;
     color: black;
 }
 
-nav#tartalomraugras a:focus {
+nav#tartalomraugras a:focus, div#tartalomraugras a:focus{
     position: static;
     background-color: white;
+}
+
+header a#normalbetu, #header a#normalbetu {
+	display: none;
+}
+
+header a#nagybetu, #header a#nagybetu {
+	display: block;
 }
 
 .rejtett {
@@ -77,7 +102,7 @@ nav#tartalomraugras a:focus {
 }
 
 /* MAIN */
-main {
+main, #main {
     max-width: 52%;
     margin: auto;
     text-align: justify;
@@ -109,7 +134,7 @@ main section h2{
     text-align: justify;
 }
 
-main p {
+main p , #main p{
     width: 70%;
     margin: 25px auto;
     font-size: 1.3em;
@@ -128,11 +153,16 @@ main span.spoiler{
     text-align: center;
 }
 
-main a{
+main a, #main a{
     color: #3C1900;
 }
 
-main a:visited{
+main a:hover, #main a:hover{
+    font-style: italic;
+    font-weight: bold;
+}
+
+main a:visited, #main a:visited{
     color: #8b521f;
 }
 
@@ -171,7 +201,7 @@ main div.video{
 }
 
 main video{
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
     padding: 2.7%;
     border: solid 2px #914400;
@@ -227,6 +257,12 @@ main form input[type="submit"]{
     margin-right: 20px;
 }
 
+main form input[type="radio"], main form input[type="checkbox"]{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
 /* FOOTER */
 footer{
     color: #FFFFFF;
@@ -240,7 +276,7 @@ footer{
 }
 
 footer div.foot{
-    width: 50%;
+    width: 70%;
     display: flex;
     margin: 0px auto 20px auto;
 }

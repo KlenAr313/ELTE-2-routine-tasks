@@ -1,0 +1,47 @@
+﻿/* nagybetűs stílus */
+
+@import url('./main.css');
+
+body {
+	font-size:210%;
+}
+
+header a#nagybetu, #header a#nagybetu {
+	display: none;
+}
+
+header a#normalbetu, #header a#normalbetu{
+	display: block;
+}
+
+header div, #header div{
+	width: 99%;
+}
+
+header #gyengenlato a, #header #gyengenlato a{
+	margin: 6px 12px;
+}
+
+main{
+	max-width: 80%;
+}
+
+main p {
+    width: 90%;
+    margin: 25px auto;
+}
+
+main figure{
+    width: 90%;
+}
+
+main div.video{
+    width: 90%;
+}
+
+main form input[type="radio"], main form input[type="checkbox"]{
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+}
+

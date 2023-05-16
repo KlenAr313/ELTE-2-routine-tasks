@@ -1,16 +1,38 @@
-<!DOCTYPE html>
-<html lang="hu">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hu" lang="hu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videó leírás</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="main.css" title="normal" />
+    <link rel="alternate stylesheet" type="text/css" href="nagybetus.css" title="nagybetus" />
+    <script type="text/javascript" src="./styleswitcher.js"></script>
 </head>
 
 <body>
-    <main>
+    <div id="header">
+        <div id="tartalomraugras">
+            <h2 class="rejtett">Ugrás az oldalon belül</h2>
+            <a href="#tartalom">Ugrás a tartalomra</a>
+        </div>
+        <div class="container">
+            <h1 lang="en">IndieBase</h1>
+            <div id="fomenu">
+                <ul>
+                    <li><a href="./index.html">Főoldal</a></li>
+                    <li><a href="./callofsea.html"><cite lang="en">Call of the Sea</cite></a></li>
+                    <li><a href="./sayonara.html"><cite lang="en">Sayonara Wild Hearts</cite></a></li>
+                    <li><a href="./celeste.html"><cite lang="en">Celeste</cite></a></li>
+                </ul>
+            </div>
+            <div id="gyengenlato">
+                <a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
+                    változat</a>
+                <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
+                </div>
+        </div>
+    </div>
+    <div id="main">
         <p>A videó egy rövidke kis jelenetet tartalmaz a játékból. Bár a történet vége felel <span
                 lang="en">spoiler</span>-eket nem tartalmaz, és a beszéd sem fontos a kontextushoz. Az látható, ahogy a
             hajó, amin állunk kiköt, és az
@@ -19,8 +41,7 @@
             kilátszani a statikus elem mögül. Ez egy fura animációt eredményez.
         </p>
         <p><a href="./callofsea.html#video">Itt visszatérhet az előző oldalra, a játék elemzésére</a></p>
-        <p><a href="./index.html">Itt visszatérhet a főoldalra</a></p>
-    </main>
+    </div>
 </body>
 
 </html>

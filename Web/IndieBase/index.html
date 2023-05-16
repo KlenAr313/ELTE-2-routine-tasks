@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IndieBase - Kezdőlap</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="nagybetus.css" title="nagybetus">
+    <script type="text/javascript" src="./styleswitcher.js"></script>
 </head>
 
 <body>
@@ -24,6 +26,11 @@
                     <li><a href="./sayonara.html"><cite lang="en">Sayonara Wild Hearts</cite></a></li>
                     <li><a href="./celeste.html"><cite lang="en">Celeste</cite></a></li>
                 </ul>
+            </nav>
+            <nav id="gyengenlato">
+                <a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;">Nagybetűs
+                    változat</a>
+                <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;">Normál változat</a>
             </nav>
         </div>
     </header>
@@ -46,22 +53,26 @@
                 idegeire mennek.
                 De, hogy ebből folytonos körforgásból kiszakadjon az ember, számomra nincs is jobb választás mint egy
                 jól
-                megtervezett és összerakott <b><span lang="en">indie</span> játék</b>. Általában nem túl hosszú, még érződik
+                megtervezett és összerakott <b><span lang="en">indie</span> játék</b>. Általában nem túl hosszú, még
+                érződik
                 rajta, hogy a
                 <span lang="en">game-designer</span>-eknek
-                volt valamilyen <i>ötletük</i>, amit minden áron meg szerettek volna valósítani, és nem egy bizonyos játéktípus
+                volt valamilyen <i>ötletük</i>, amit minden áron meg szerettek volna valósítani, és nem egy bizonyos
+                játéktípus
                 hullámát meglovagolva akarnak még több pénzt kicsikarni a játékos közösségből (<span lang="en">battle
                     royale</span> köhömm
                 köhömm).
                 Ebből kifolyólag sokkal élőbbnek hatnak mint a nagy céges barátai (tisztelet a kivételnek ott is).
                 Pár olyan példát szeretnék bemutatni, amik világában én személyesen el tudtam veszni hosszú órákra.
                 Ebből
-                kifolyólag a játékok <i>értékelése</i> többnyire szubjektív lesz, de megpróbálkozok objektív szempontból is
+                kifolyólag a játékok <i>értékelése</i> többnyire szubjektív lesz, de megpróbálkozok objektív szempontból
+                is
                 elemezni
                 őket. Nem hiszem, hogy bármilyen sorrendet kellene állítani ezek közt, hiszen mindegyikben más fogott
                 meg,
                 és
-                egymástól igencsak távol álló <i>mechanikákból</i> épülnek fel. Így az elemzett szempontok is nagyságrendben el
+                egymástól igencsak távol álló <i>mechanikákból</i> épülnek fel. Így az elemzett szempontok is
+                nagyságrendben el
                 fognak
                 térni.
             </p>
@@ -75,7 +86,7 @@
                         <li>Fejlesztők: <cite lang="en">Out of the Blue</cite></li>
                         <li>Kiadó: <cite lang="en">Raw Fury</cite></li>
                         <li>Designer: <span lang="en">Tatiana Delgado</span></li>
-                        <li>Kiadás: <time datetime="2020-12-08" >2020 December 8</time></li>
+                        <li>Kiadás: <time datetime="2020-12-08">2020 December 8</time></li>
                         <li>Kaland, <span lang="en">Puzzle</span></li>
                     </ul>
                 </aside>
@@ -95,7 +106,7 @@
                         <li>Fejlesztők: <cite lang="en">Simogo</cite></li>
                         <li>Kiadó: <cite lang="en">Annapurna Interactive</cite></li>
                         <li>Designer: <span lang="en">Simon Flesser</span></li>
-                        <li>Kiadás: <time datetime="2019-09-19" >2019 Szeptember 19</time></li>
+                        <li>Kiadás: <time datetime="2019-09-19">2019 Szeptember 19</time></li>
                         <li>Ritmus, Akció</li>
                     </ul>
                 </aside>
@@ -130,7 +141,8 @@
         </div>
         <hr>
         <div class="form">
-            <p>Ha valami kérdésed, megjegyzésed lenne a játékkal kapcsolatban, esetleg valamilyen másik <b><span lang="en">indie</span> játékot</b>
+            <p>Ha valami kérdésed, megjegyzésed lenne a játékkal kapcsolatban, esetleg valamilyen másik <b><span
+                        lang="en">indie</span> játékot</b>
                 szeretnél
                 javasolni, azt itt megteheted.</p>
 
