@@ -3,3 +3,4 @@ bin/
 obj/
 
 junit5all.jar
+Java/**/*.class
