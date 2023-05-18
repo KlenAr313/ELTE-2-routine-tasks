@@ -22,13 +22,17 @@ header #gyengenlato a, #header #gyengenlato a{
 	margin: 6px 12px;
 }
 
-main{
-	max-width: 80%;
+main, #main{
+	width: 80%;
 }
 
-main p {
+main p, #main p {
     width: 90%;
     margin: 25px auto;
+}
+
+main aside{
+    height: unset;
 }
 
 main figure{
@@ -45,3 +49,88 @@ main form input[type="radio"], main form input[type="checkbox"]{
     transform: scale(3);
 }
 
+@media screen and (min-width: 1921px){
+    body{
+        font-size: 210%;
+    }
+
+    main figure{
+        border-radius: 20px;
+    }
+
+    main img{
+        border-radius: 20px;
+    }
+
+    main video{
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        font-size: 180%;
+    }
+    header nav ul li, #header div ul li{
+        display: block;
+        white-space: nowrap;
+    }
+
+    main, #main {
+        width: 90%;
+        padding: 5px;
+    }
+    
+    main article, main div#forras{
+        margin: 30px 0px;
+    }
+
+    main aside{
+        height: unset;
+    }
+
+    main ul{
+        margin-left: 0%;
+    }
+
+    main p , #main p{
+        width: 80%;
+        margin: 25px auto;
+        font-size: 1.3em;
+    }
+
+    footer div.foot{
+        width: 90%;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 490px){
+    body{
+        background-image: unset;
+        background-color: bisque;
+        font-size: 150%;
+    }
+    main, #main {
+        width: 100%;
+        padding: 0px;
+    }
+
+    main article, main div#forras{
+        column-count: 1;
+        margin: 30px 0px;
+    }
+
+    main ul{
+        margin-left: 10%;
+    }
+
+    main aside{
+        height: unset;
+    }
+
+    footer div.foot{
+        width: 90%;
+        display: block;
+    }
+}

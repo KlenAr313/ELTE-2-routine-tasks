@@ -8,12 +8,13 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     text-align: center;
-    font-size: 105%;
+    font-size: 100%;
+    width: 100%;
 }
 
 /* HEADER */
 header, #header {
-    background-color: #3C1900;
+    background-color: #3c1900;
     color: #e9dede;
     padding: 5px;
 }
@@ -103,7 +104,7 @@ header a#nagybetu, #header a#nagybetu {
 
 /* MAIN */
 main, #main {
-    max-width: 52%;
+    width: 52%;
     margin: auto;
     text-align: justify;
     background-color: bisque;
@@ -122,6 +123,10 @@ main article:nth-child(4){
 
 main article h2, main article aside{
     direction: ltr;
+}
+
+main div#forras{
+    margin: 30px 5px;
 }
 
 main h1, h2{
@@ -146,10 +151,13 @@ main ul{
 
 main ul li{
     font-size: 1.3em;
+    text-align: start;
 }
 
 main span.spoiler{
-    width: 100%;
+    
+    margin: auto;
+    font-size: 1.4em;
     text-align: center;
 }
 
@@ -240,7 +248,7 @@ main form fieldset{
     padding-bottom: 25px;
     border: none;
     margin: auto;
-    width: 50%;
+    max-width: 70%;
     font-size: 1.3em;
 }
 
@@ -251,6 +259,14 @@ main form legend{
 
 main form textarea, main form input{
     font-size: 1em;
+}
+
+main form textarea, main form input[type="email"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
 }
 
 main form input[type="submit"]{
@@ -324,5 +340,102 @@ footer a:visited{
 
     main video{
         border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    header div , #header div{
+        display: block;
+    }
+    
+    header nav ul li, #header div ul li{
+        display: block;
+        white-space: nowrap;
+    }
+
+    main, #main {
+        width: 90%;
+        padding: 5px;
+    }
+    
+    main article, main div#forras{
+        margin: 30px 0px;
+    }
+
+    main aside{
+        height: 330px;
+    }
+
+    main ul{
+        margin-left: 0%;
+    }
+
+    main p , #main p{
+        width: 80%;
+        margin: 25px auto;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 490px){
+    body{
+        background-image: unset;
+        background-color: bisque;
+    }
+
+    main, #main {
+        width: 100%;
+        padding: 0px;
+    }
+
+    main article, main div#forras{
+        column-count: 1;
+        margin: 30px 0px;
+    }
+
+    main ul{
+        margin-left: 10%;
+    }
+
+    main aside{
+        height: unset;
+    }
+
+    footer div.foot{
+        width: 90%;
+        display: block;
+    }
+}
+
+@media print{
+    body{
+        font-family: "Times New Roman", Times, serif;
+    }
+
+    header, footer,  #header, main div.video{
+        display: none;
+    }
+
+    main figure{
+        width: 50%;
+    }
+
+    main table{
+        width: 90%;
+    }
+
+    main, #main{
+        width: 100%;
+        margin: 0;
+    }
+
+    main p , #main p{
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    a:after{
+        content:" (" attr(href) ")";
     }
 }
