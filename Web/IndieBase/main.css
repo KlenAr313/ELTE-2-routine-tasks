@@ -129,6 +129,15 @@ main div#forras{
     margin: 30px 5px;
 }
 
+main div#forras ul{
+    list-style-type: none;
+    padding-left: unset;
+}
+
+main div#forras ul li{
+    margin-bottom: 10px;
+}
+
 main h1, h2{
     text-align: center;
 }
@@ -149,7 +158,7 @@ main ul{
     margin-left: 20%;
 }
 
-main ul li{
+main ul li, footer ul li{
     font-size: 1.3em;
     text-align: start;
 }
@@ -261,7 +270,7 @@ main form textarea, main form input{
     font-size: 1em;
 }
 
-main form textarea, main form input[type="email"] {
+main form textarea, main form input[type="email"], main form input[type="text"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -343,7 +352,7 @@ footer a:visited{
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 850px) {
 
     header div , #header div{
         display: block;
@@ -360,7 +369,7 @@ footer a:visited{
     }
     
     main article, main div#forras{
-        margin: 30px 0px;
+        margin: 30px 15%;
     }
 
     main aside{
@@ -384,6 +393,10 @@ footer a:visited{
         background-color: bisque;
     }
 
+    header div ul, #header div ul{
+        padding-left: unset;
+    }
+
     main, #main {
         width: 100%;
         padding: 0px;
@@ -392,6 +405,17 @@ footer a:visited{
     main article, main div#forras{
         column-count: 1;
         margin: 30px 0px;
+        padding-left: unset;
+        width: 100%;
+    }
+
+    main div#forras h2{
+        text-align: start;
+        margin-left: 8px;
+    }
+
+    main div#forras a{
+        word-break: break-all;
     }
 
     main ul{
