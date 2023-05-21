@@ -58,9 +58,9 @@ public class GaussianElimination{
 
     private int argMax(int row, int col){
         checkIndexes(row, col);
-        double max = Math.abs(this.matrix[row + 1][col]);
-        int maxRow = row + 1;
-        for (int i = row + 2; i < this.cols; i++){
+        double max = Math.abs(this.matrix[row][col]);
+        int maxRow = row;
+        for (int i = row + 1; i < this.rows; i++){
             if(max < Math.abs(this.matrix[i][col])){
                 max = Math.abs(this.matrix[i][col]);
                 maxRow = i;
@@ -71,7 +71,20 @@ public class GaussianElimination{
     }
 
     public void backSubstitution(){
-        System.out.println("TODO");
+        int h = 0;
+        int k = 0;
+        while (h < rows && k < cols){
+            if(matrix[h][k] == 0){
+                throw new IllegalArgumentException("Equations without a solution");
+            }
+            else{
+                for(int i = 0; i < h; i++){
+                    multiplyAndAddRow(i, h, k);
+                }
+                k++;
+                h++;
+            }
+        }
     }
 
     private void checkMatrixDimensions(double[][] matrix){
@@ -80,12 +93,22 @@ public class GaussianElimination{
         }
     }
 
-    private void multiplyAndAddRow(int a, int b, int c){
-        System.out.println("TODO");
+    private void multiplyAndAddRow(int addRow, int mulRow, int colIndex){
+        checkRowIndex(addRow);
+        checkRowIndex(mulRow);
+        checkColIndex(colIndex);
+        double f = matrix[addRow][colIndex] / matrix[mulRow][colIndex];
+        matrix[addRow][colIndex] = 0;
+        for (int j = colIndex + 1; j < cols; j++){
+            matrix[addRow][j] = matrix[addRow][j] - matrix[mulRow][j] * f;
+        }
     }
 
-    private void multiplyRow(int a, int b){
-        System.out.println("TODO");
+    private void multiplyRow(int rowInd, int colInd){
+        double pivot = matrix[rowInd][colInd];
+        for (int j = 0; j < cols; j++){
+            matrix[rowInd][j] = matrix[rowInd][j] / pivot;
+        }
     }
 
     public void print(){
@@ -93,11 +116,31 @@ public class GaussianElimination{
     }
 
     public void rowEchelonForm(){
-        System.out.println("TODO");
+        int h = 0;
+        int k = 0;
+        while (h < rows && k < cols){
+            int maxRow = argMax(h, k);
+            if(matrix[maxRow][k] == 0){
+                k++;
+            }
+            else{
+                swapRows(h, maxRow);
+                for(int i = h + 1; i < rows; i++){
+                    multiplyAndAddRow(i, h, k);
+                }
+                multiplyRow(h, k);
+                k++;
+                h++;
+            }
+        }
     }
 
     private void swapRows(int a, int b){
-        System.out.println("TODO");
+        checkRowIndex(a);
+        checkRowIndex(b);
+        double[] row = this.matrix[a];
+        this.matrix[a] = this.matrix[b];
+        this.matrix[b] = row;
     }
 
     private void checkIndexes(int row, int col){
