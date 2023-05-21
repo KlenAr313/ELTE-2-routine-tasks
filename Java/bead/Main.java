@@ -1,33 +1,26 @@
+import linear.*;
 import linear.algebra.*;
 
 public class Main{
     public static void main(String[] args){
-        double[][] matrix1 = new double[][] {
-            {2.0, 3.0, 5.0, 8.0},
-            {1.0, 2.0, 3.0, 5.0},
-            {4.0, 6.0, 8.0, 12.0} };
+        try{
+            double[][] matrix = new double[args.length][];
+            for(int i = 0; i < args.length; i++){
+                String[] line = args[i].split(",");
+                double[] row = EquationSolver.stringsToDoubles(line);
+                matrix[i] = row;
+            }
 
-        double[][] matrix2 = new double[][] {
-            { 1.0, 3.0,  1.0,  9.0 },
-            { 1.0, 1.0, -1.0,  1.0 },
-            { 3.0, 11.0, 5.0, 35.0 } };
-
-        double[][] rowEchelonForm1 = new double[][] {
-            { 1.0, 1.5, 2.0, 3.0 },
-            { 0.0, 1.0, 2.0, 4.0 },
-            { 0.0, 0.0, 1.0, 2.0 } };
-
-        double[][] matrix1AfterBackSubstitution = new double[][] {
-            { 1.0, 0.0, 0.0, -1.0 },
-            { 0.0, 1.0, 0.0, 0.0  },
-            { 0.0, 0.0, 1.0, 2.0  } };
-
-        GaussianElimination ge = new GaussianElimination(3, 4, matrix1);
-        ge.rowEchelonForm();
-
+            GaussianElimination ge = new GaussianElimination(matrix.length, matrix[0].length, matrix);
+            ge.print();
+            ge.rowEchelonForm();
+            ge.print();
+            ge.backSubstitution();
+            ge.print();
+        }catch (Exception e){
+            System.err.println(e.toString());
+            System.err.println(e.getMessage());
+        }
         
-        System.out.printf("=%f", 2.0);
-
-        System.out.printf("+%f%c", 3.4545454, 'p');
     }
 }

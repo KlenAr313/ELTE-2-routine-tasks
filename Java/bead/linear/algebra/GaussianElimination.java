@@ -117,14 +117,15 @@ public class GaussianElimination{
         for(int i = 0; i < rows; i++){
             for(int j = 0; j < cols - 1; j++){
                 if(matrix[i][j] >= 0){
-                    System.out.printf("+%,.2f%c", matrix[i][j], abc[j]);
+                    System.out.print("+" + matrix[i][j] + abc[j]);
                 }
                 else{
-                    System.out.printf("%,.2f%c", matrix[i][j], abc[j]);
+                    System.out.print("" + matrix[i][j] + abc[j]);
                 }
             }
-            System.out.printf("=%,.2f%n", matrix[i][cols-1]);
+            System.out.println("=" + matrix[i][cols-1]);
         }
+        System.out.println();
     }
 
     public void rowEchelonForm(){
