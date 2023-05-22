@@ -90,8 +90,15 @@ public class GaussianElimination{
     }
 
     private void checkMatrixDimensions(double[][] matrix){
-        if (matrix.length != rows || matrix[0].length != cols){
+        if (matrix.length != rows){
             throw new IllegalArgumentException("Wrong matrix sizes");
+        }
+        else{
+            for(int i = 0; i < rows; i++){
+                if(matrix[i].length != cols){
+                    throw new IllegalArgumentException("Wrong matrix sizes");
+                }
+            }
         }
     }
 
