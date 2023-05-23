@@ -15,7 +15,7 @@ namespace petShop
         private Species species;
         public string speciesName;
 
-        public Animal(string id, string colour, int value, string age, Species species, string speciesName)
+        public Animal(string id, string colour, int value, string age, Species species)
         {
             this.id = id;
             this.colour = colour;
