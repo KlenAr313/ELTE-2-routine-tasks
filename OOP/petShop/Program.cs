@@ -4,7 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+			List<Animal> animal = new List<Animal>();
+			List<Partner> partners = new List<Partner>();
+			List<Invoice> invoices = new List<Invoice>();
+			try
+			{
+
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
         }
     }
 }

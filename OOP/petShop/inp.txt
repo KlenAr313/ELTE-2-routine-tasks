@@ -1,0 +1,34 @@
+Watoo's PetShop
+gyTW,green,40,young,T
+goTW,green,35,old,T
+poFW,purple,90,old,F
+roFW,red,60,old,F
+byHW,brown,20,young,H
+
+AnyBreeder
+ryHA,red,30,young,H
+boHA,blue,20,old,H
+yyFA,yellow,50,young,F
+goFA,green,25,old,F
+roTA,red,50,old,T
+byTA,brown,50,young,T
+
+HamsterHamster
+ryHH,red,30,young,H
+boHH,blue,20,old,H
+yyFH,yellow,50,young,H
+goFH,green,25,old,H
+
+Jango Fett
+
+Jabba the Hutt
+
+-
+buy,AnyBreeder,byTA
+buy,AnyBreeder,roTA
+buy,AnyBreeder,yyFA
+buy,HamsterHamster,ryHH
+buy,HamsterHamster,boHH
+buy,HamsterHamster,yyFH
+sell,Jango Fett,poFW
+sell,Jabba the Hutt,yyFH
