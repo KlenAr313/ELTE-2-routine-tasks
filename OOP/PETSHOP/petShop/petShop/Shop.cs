@@ -10,7 +10,7 @@ namespace petShop
     public class Shop
     {
         public class ShopUnableToSellAnimalException : Exception { }
-        public class ShopUnableToBuyAnimalException : Exception { }
+        public class ShopUnableToBuyFromPartnerException : Exception { }
 
         public string Name;
         private List<Invoice> invoices;
@@ -42,7 +42,7 @@ namespace petShop
             }
             else
             {
-                throw new ShopUnableToBuyAnimalException();
+                throw new ShopUnableToBuyFromPartnerException();
             }
         }
 
@@ -154,6 +154,22 @@ namespace petShop
             partner = partners.FirstOrDefault(i => i.getName() == name);
 
             return (partner != null, partner);
+        }
+
+        //for test
+        public int partnerCount()
+        {
+            return partners.Count();
+        }
+
+        public int animalCount()
+        {
+            return animals.Count();
+        }
+
+        public int invoiceCount()
+        {
+            return invoices.Count();
         }
     }
 }
