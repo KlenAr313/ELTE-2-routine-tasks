@@ -61,5 +61,11 @@ namespace petShop
 
             return (animal != null, animal);
         }
+
+        //for testing
+        public int animalCount()
+        {
+            return animals.Count;
+        }
     }
 }

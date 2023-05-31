@@ -1,4 +1,6 @@
-﻿namespace petShop
+﻿using System;
+
+namespace petShop
 {
     internal class Program
     {
@@ -73,17 +75,17 @@
                 Console.WriteLine("a. Van-e egy kereskedésben adott színű pinty: yellow?\n" + shop.HasFinchWithColor("yellow"));
                 Console.WriteLine("\nb. Hány hörcsöge van egy kereskedésnek?\n" + shop.HamsterCount());
                 Animal? tar;
-                if((tar = shop.MostVluableTarantula()) != null)
+                if ((tar = shop.MostVluableTarantula()) != null)
                 {
                     Console.WriteLine("\nc. Melyik a legnagyobb eszmei értékű tarantullája egy kereskedésnek?\n" + tar.getId());
                 }
-                else 
+                else
                 {
                     Console.WriteLine("\nc. Melyik a legnagyobb eszmei értékű tarantullája egy kereskedésnek?\nThere's no tarantulla");
                 }
                 Console.WriteLine("\nd. Hány szerződést kötött egy adott kereskedés egy adott partnerrel: AnyBreeder?\n" + shop.InvoiceCountWithPartner("AnyBreeder"));
                 Console.WriteLine("\ne. Mekkora egy kereskedésnek a nyeresége\n" + shop.Profit());
-                
+
             }
         }
 
